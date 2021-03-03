@@ -15,20 +15,21 @@ def register_phone_number():
     title = "Austin Phonebook | REGISTER"
     form = UserInfoForm()
     if request.method == 'POST' and form.validate():
-        username = form.username.data
-        email = form.email.data
+        first_name = form.first_name.data
+        last_name = form.last_name.data
+        phone_number = form.phone_number.data
         password = form.password.data
-        print(username, email, password)
+        print(first_name, last_name, phone, password)
     return render_template('register_phone_number.html' , title=title, form=form)
 
 
 
-@app.route('/createpost', methods=['GET', 'POST'])
-def createpost():
-    title = "Kekambas Blog | CREATE POST"
+@app.route('/post_comment', methods=['GET', 'POST'])
+def post_comment():
+    title = "Austin Phonebook | COMMENT"
     post = PostForm()
     if request.method == 'POST' and post.validate():
         post_title = post.title.data
         content = post.content.data
         print(post_title, content)
-    return render_template('create_post.html', post=post, title=title)
+    return render_template('post_comment.html', post=post, title=title)

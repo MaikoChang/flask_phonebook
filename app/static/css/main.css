@@ -1,14 +1,14 @@
 .banner{
     height:95vh;
-    background-image: url(https://images.all-free-download.com/images/graphicthumb/beautiful_scenery_04_hd_pictures_166258.jpg);
+    background-image: url(https://media.nomadicmatt.com/2020/austinthings1.jpg);
     background-size: cover;
 }
 
 .header-text{
     display: flex;
     justify-content: center;
-    padding-top: 20%;
-    left: 20rem;
-    top: 10rem;
-    color: white;
+    padding-top: 10%;
+    left: 10rem;
+    top: 5rem;
+    color: blue;
 }
